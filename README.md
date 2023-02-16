@@ -1,1 +1,1 @@
-# Datalake-no-BigQuery-Consultas-uando-SQL
+# Datalake-no-BigQuery-Consultas-usando-SQL
