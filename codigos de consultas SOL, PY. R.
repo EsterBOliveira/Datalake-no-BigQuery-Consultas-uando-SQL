@@ -1,0 +1,23 @@
+SELECT * FROM `basedosdados.br_poder360_pesquisas.microdados` LIMIT 100
+
+
+
+import basedosdados as bd
+
+# Para carregar o dado direto no pandas
+df = bd.read_table(dataset_id='br_poder360_pesquisas',
+table_id='microdados',
+billing_project_id="<YOUR_PROJECT_ID>")
+
+
+
+
+install.packages("basedosdados")
+library("basedosdados")
+
+# Defina o seu projeto no Google Cloud
+set_billing_id("<YOUR_PROJECT_ID>")
+
+# Para carregar o dado direto no R
+query <- bdplyr("br_poder360_pesquisas.microdados")
+df <- bd_collect(query)
